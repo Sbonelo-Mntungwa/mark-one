@@ -1,0 +1,13 @@
+[package]
+name = "mark-one-course"
+version = "0.1.0"
+edition = "2021"
+description = "The Mark One learning path: 42 Marks from a live wire to software, built on the engine."
+
+[lib]
+name = "mark_one_course"
+
+[dependencies]
+mark-one-engine = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }

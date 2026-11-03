@@ -1,0 +1,7 @@
+/* The progress reactor in the brand mark. */
+.seg{fill:#0d2233;stroke:none;transition:fill .5s}
+.seg.done{fill:var(--gold);filter:url(#rglow)}
+.seg.open{fill:var(--holo);animation:breathe 2.2s ease-in-out infinite}
+@keyframes breathe{50%{opacity:.35}}
+.core{fill:#cfefff}
+.ring{fill:none;stroke:var(--holo-b);stroke-width:1}

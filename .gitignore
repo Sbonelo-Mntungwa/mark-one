@@ -1,0 +1,10 @@
+# Build output
+/target
+
+# Your progress, drafts and designs (see MARK_ONE_SAVE)
+mark_one_save.json
+*.tmp
+
+# Archives and OS files
+*.zip
+.DS_Store

@@ -1,0 +1,17 @@
+[package]
+name = "mark-one-server"
+version = "0.1.0"
+edition = "2021"
+description = "HTTP server for Mark One: serves the web view and exposes the engine and course as a JSON API."
+
+[[bin]]
+name = "mark-one"
+path = "src/main.rs"
+
+[dependencies]
+mark-one-engine = { workspace = true }
+mark-one-course = { workspace = true }
+axum = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }

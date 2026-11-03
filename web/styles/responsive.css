@@ -1,0 +1,11 @@
+/* Reduced motion and narrow screens. */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+@media (max-width: 1100px){
+  #marks{width:190px} #dock,#log,#flags{left:212px} #brief{width:300px} #dock{right:324px} .panetab{left:202px}
+}
+@media (max-width: 820px){
+  #marks,.panetab{display:none} #brief{top:auto;height:36vh;left:12px;width:auto;bottom:56px} #dock{left:12px;right:12px;bottom:calc(36vh + 66px)}
+  #log{display:none} #flags{left:12px} #progress,.mark .pr{display:none}
+}

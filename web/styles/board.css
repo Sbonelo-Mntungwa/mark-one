@@ -1,0 +1,40 @@
+/* The circuit board: parts, pins, wires. */
+#board{position:fixed;inset:0;width:100vw;height:100vh;display:block;user-select:none;-webkit-user-select:none}
+#board text{font-family:var(--ui)}
+.wire{fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.v1.wire{stroke:var(--gold)}
+.halo{fill:none;stroke:rgba(255,184,77,.26);stroke-width:9;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.halo.x{stroke:rgba(255,61,71,.25)}
+.v0.wire{stroke:#2a4f6d}
+.vZ.wire{stroke:#3a5a75;stroke-dasharray:3 6}
+.vX.wire{stroke:var(--red)}
+.wire.sel{stroke-width:4.5}
+.flow{fill:none;stroke:#fff4dc;stroke-width:1.6;stroke-linecap:round;stroke-dasharray:2 16;animation:flow .8s linear infinite;pointer-events:none}
+@keyframes flow{to{stroke-dashoffset:-18}}
+.hit{fill:none;stroke:transparent;stroke-width:12;cursor:pointer}
+.part{cursor:grab}
+.body{fill:rgba(90,215,255,.045);stroke:var(--holo-a);stroke-width:1.2}
+.part:hover .body{stroke:var(--holo)}
+.part.sel .body{stroke:var(--ice);stroke-width:1.8;fill:rgba(90,215,255,.1)}
+.tick{fill:none;stroke:var(--holo);stroke-width:1.6;opacity:.85}
+.body.rail{stroke:rgba(255,184,77,.7);fill:rgba(255,184,77,.07)}
+.body.gnd{stroke:#4f7896;fill:rgba(79,120,150,.06)}
+.body.in.on{fill:rgba(255,184,77,.16);stroke:var(--gold)}
+.body.out.on{fill:rgba(255,184,77,.12)}
+.body.out.good{stroke:var(--green)} .body.out.badv{stroke:var(--red)}
+.lbl{font-size:12px;fill:var(--ice);text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.lbl.val{font-family:var(--num)!important;font-size:16px}
+.lbl.v1{fill:var(--gold)} .lbl.vX{fill:var(--red)} .lbl.vZ{fill:var(--text-faint)}
+.lbl.chiplbl{font-size:14px;font-weight:700;fill:#ffd18a;letter-spacing:.06em}
+.lbl.pn{font-size:9.5px;fill:var(--text-dim)}
+.lbl.l{text-anchor:start} .lbl.r{text-anchor:end}
+.lbl.gold{fill:var(--gold);font-weight:700}
+.sym{fill:none;stroke:#8fd9f5;stroke-width:1.8;stroke-linecap:round}
+.chan{fill:none;stroke:#2f5876;stroke-width:3;stroke-linecap:round}
+.chan.on{stroke:var(--gold);stroke-width:4}
+.pin{stroke:var(--void);stroke-width:1.5;cursor:crosshair}
+.pin.v1{fill:var(--gold)} .pin.v0{fill:#4f7896} .pin.vZ{fill:#13283a;stroke:#3a5a75} .pin.vX{fill:var(--red)}
+.pin:hover,.pin.pend{stroke:var(--ice);stroke-width:2.2}
+.pin.pend{animation:pend 1s ease-in-out infinite}
+@keyframes pend{50%{stroke:var(--holo);stroke-width:4}}
+.rubber{stroke:var(--holo);stroke-width:1.8;stroke-dasharray:6 5;fill:none;pointer-events:none}

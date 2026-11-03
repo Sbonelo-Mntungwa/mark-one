@@ -1,0 +1,10 @@
+/* ROM program editor. */
+#prog textarea{width:100%;min-height:210px;resize:vertical;background:rgba(0,0,0,.35);color:var(--ice);border:1px solid var(--holo-b);font:14px/1.5 var(--num);padding:10px;outline:none}
+#prog textarea:focus{border-color:var(--holo)}
+#prog .row{display:flex;gap:6px;margin-top:8px;align-items:center}
+.asmerr{color:#ffb3b8;font-size:13px;margin-top:6px}
+.listing{font-family:var(--num);font-size:12px;column-count:2;column-gap:14px;margin-top:10px;color:var(--text-dim)}
+.listing div{white-space:nowrap}
+.listing div.cur{color:var(--gold)} .listing span.a{color:var(--text-faint)}
+.goal{font-family:var(--num);font-size:15px;color:var(--gold);margin:4px 0}
+.disp{font-family:var(--num)!important}

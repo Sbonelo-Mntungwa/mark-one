@@ -1,0 +1,23 @@
+/* Design tokens, resets, buttons. */
+:root{
+  --void:#050b14; --void2:#08131f; --holo:#5ad7ff; --ice:#d8f6ff; --gold:#ffb84d; --red:#ff3d47; --green:#63f5b0;
+  --holo-a:rgba(90,215,255,.55); --holo-b:rgba(90,215,255,.22); --holo-c:rgba(90,215,255,.08);
+  --text-dim:#7fa6bd; --text-faint:#48687e; --steel:#1f3a52;
+  --ui:"Chakra Petch", "Bahnschrift", "DIN Alternate", system-ui, sans-serif;
+  --num:"Share Tech Mono", ui-monospace, Menlo, monospace;
+  --cut:10px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;color:var(--ice);font:15px/1.5 var(--ui);
+  background:radial-gradient(ellipse 70% 60% at 52% 52%, #0b2236 0%, #071423 45%, var(--void) 100%)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.05;
+  background:repeating-linear-gradient(0deg,#9fe9ff 0 1px,transparent 1px 3px)}
+button{font:500 14px/1 var(--ui);color:var(--ice);background:rgba(90,215,255,.06);border:1px solid var(--holo-b);
+  padding:9px 14px;cursor:pointer;letter-spacing:.02em;
+  clip-path:polygon(7px 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%,0 7px)}
+button:hover{background:rgba(90,215,255,.14);border-color:var(--holo-a)}
+button:focus-visible{outline:2px solid var(--holo);outline-offset:2px}
+button.prime{background:var(--gold);color:#1d1100;border-color:var(--gold);font-weight:700}
+button.prime:hover{background:#ffc874}
+button.on{color:var(--gold);border-color:var(--gold);background:rgba(255,184,77,.1)}
+.hidden{display:none!important}

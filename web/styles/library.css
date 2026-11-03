@@ -1,0 +1,23 @@
+/* Component library overlay. */
+#library{position:fixed;inset:0;z-index:56;display:flex;align-items:center;justify-content:center;background:rgba(3,8,14,.7);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.libcard{position:relative;width:min(1080px,94vw);height:min(760px,92vh);display:flex;flex-direction:column;--cut:16px}
+.libcard .lhd{display:flex;align-items:baseline;gap:14px;padding:16px 22px 10px;border-bottom:1px solid var(--holo-c)}
+.libcard h2{margin:0;font-size:24px}
+.libcard .lt{color:var(--text-dim);font-size:13px}
+.lclose{margin-left:auto}
+.lbody{overflow:auto;padding:6px 6px 18px;scrollbar-width:thin;scrollbar-color:var(--holo-b) transparent}
+.lbody .ptitle{padding:14px 16px 6px}
+.lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;padding:0 16px}
+.lcomp{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border:1px solid var(--holo-b);background:rgba(90,215,255,.03)}
+.lcomp.locked{opacity:.5}
+.lchip{flex:none;min-width:74px;padding:7px 8px;text-align:center;font-weight:700;font-size:13px;letter-spacing:.05em;color:#ffd18a;border:1.5px solid rgba(255,209,138,.6);
+  clip-path:polygon(7px 0,100% 0,100% calc(100% - 7px),calc(100% - 7px) 100%,0 100%,0 7px)}
+.lcomp.locked .lchip{color:var(--text-faint);border-color:var(--steel)}
+.lmeta{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.lmeta b{font-size:14px}
+.lmeta span{font-size:13px;color:var(--text-dim)}
+.lmeta small{font-size:12px;color:var(--text-faint)}
+.lmeta .lk{color:var(--gold);font-size:12px}
+.lmeta .pinrow{margin-top:4px}
+.ldel{flex:none;font-size:12px;padding:6px 9px}
+.ldel:hover{border-color:var(--red);color:#ffc9cd}

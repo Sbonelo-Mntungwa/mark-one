@@ -1,0 +1,17 @@
+/* Confirmation and form dialogs. */
+#dialog{position:fixed;inset:0;z-index:70;display:flex;align-items:center;justify-content:center;background:rgba(3,8,14,.66);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.dcard{position:relative;width:min(440px,92vw);padding:20px 22px 18px;--cut:14px}
+.dcard.danger{border-color:rgba(255,61,71,.55)}
+.dcard.danger::before{background:var(--red)}
+.dhd{display:flex;align-items:center;gap:10px}
+.dhd h3{margin:0;font-size:19px;font-weight:700}
+.dwarn{flex:none;width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#1d0306;background:var(--red);clip-path:polygon(50% 0,100% 100%,0 100%);padding-top:6px;font-size:14px}
+.dbody{margin:12px 0 4px;color:#c9e7f5;font-size:15px;line-height:1.55}
+.dfield{display:flex;flex-direction:column;gap:4px;margin-top:12px;font-size:13px;color:var(--text-dim)}
+.dfield input{font:15px var(--ui);color:var(--ice);background:rgba(0,0,0,.35);border:1px solid var(--holo-b);padding:8px 10px;outline:none}
+.dfield input:focus{border-color:var(--holo)}
+.dfield small{color:var(--text-faint);font-size:12px}
+.derr{color:#ffb3b8;font-size:13px;min-height:18px;margin-top:8px}
+.drow2{display:flex;justify-content:flex-end;gap:8px;margin-top:6px}
+button.dangerbtn{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}
+button.dangerbtn:hover{background:#ff5a63}

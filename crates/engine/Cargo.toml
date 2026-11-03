@@ -1,0 +1,12 @@
+[package]
+name = "mark-one-engine"
+version = "0.1.0"
+edition = "2021"
+description = "Mixed-level digital circuit simulator and component library: switch-level MOSFETs up to an 8-bit CPU."
+
+[lib]
+name = "mark_one_engine"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }

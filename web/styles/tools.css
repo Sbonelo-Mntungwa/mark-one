@@ -1,0 +1,35 @@
+/* Experiment analysis tabs, test bench, equivalence, export, debugger. */
+.tabs{display:flex;gap:2px;margin:2px 0 10px;border-bottom:1px solid var(--holo-b)}
+.tabs button{clip-path:none;border:none;background:none;padding:7px 9px;font-size:13px;color:var(--text-dim);border-bottom:2px solid transparent}
+.tabs button.on{color:var(--ice);border-bottom-color:var(--holo)}
+.tabs button:hover{background:var(--holo-c)}
+textarea.code{width:100%;min-height:170px;resize:vertical;margin-top:8px;background:rgba(0,0,0,.35);color:var(--ice);border:1px solid var(--holo-b);font:13px/1.5 var(--num);padding:8px 10px;outline:none}
+textarea.code:focus{border-color:var(--holo)}
+#ftool .row,#dbg .row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+#ftool .row button,#dbg .row button{font-size:13px;padding:7px 11px}
+.verdict{margin-top:10px;font-weight:700;font-size:14px}
+.verdict.ok{color:var(--green)} .verdict.bad{color:var(--red)} .verdict.warn{color:var(--gold)}
+details.help{margin-top:10px;font-size:13px}
+details.help summary{cursor:pointer;color:var(--holo)}
+pre.ex{font:12px/1.45 var(--num);color:var(--text-dim);background:rgba(0,0,0,.3);border:1px solid var(--holo-c);padding:8px;margin:8px 0;overflow:auto;max-height:280px;white-space:pre}
+code,kbd{font:12px var(--num);color:var(--ice)}
+.tm{font:11px var(--num);color:var(--text-faint)}
+.drow select optgroup{color:var(--text-faint)}
+.badge{display:block;width:100%;margin-top:8px;text-align:left;font-size:13px;color:var(--text-dim);clip-path:none}
+.badge.ok{color:var(--green);border-color:rgba(99,245,176,.45)}
+.badge.bad{color:var(--red);border-color:rgba(255,61,71,.5)}
+/* Debugger */
+.dbcur{margin-top:10px;font:13px var(--num);color:var(--text-dim)}
+.dbcur b{color:var(--gold);font-weight:400}
+.dbchip{margin-top:10px;padding-top:8px;border-top:1px solid var(--holo-c)}
+.dbname{font-size:12px;color:var(--holo);letter-spacing:.04em}
+.kv .v.chg{color:var(--gold)}
+.kv .v small{color:var(--text-faint)}
+.mem{display:grid;grid-template-columns:repeat(8,1fr);gap:2px;margin-top:4px;font:12px var(--num)}
+.mem span{padding:2px 3px;border:1px solid var(--holo-c);color:var(--text-faint);text-align:center}
+.mem span i{display:block;font-style:normal;font-size:9px;color:var(--text-faint)}
+.mem span.nz{color:var(--ice)}
+.mem span.chg{color:var(--gold);border-color:var(--gold)}
+.listing div[data-addr]{cursor:pointer;padding-left:12px;position:relative}
+.listing div[data-addr]:hover{background:var(--holo-c)}
+.listing div.bp::before{content:"";position:absolute;left:2px;top:50%;width:7px;height:7px;margin-top:-3.5px;border-radius:50%;background:var(--red)}
