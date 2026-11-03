@@ -5,6 +5,7 @@
 <p align="center">
   <img alt="Rust 1.85+" src="https://img.shields.io/badge/rust-1.85%2B-ffb84d?style=flat-square&logo=rust&logoColor=white&labelColor=071423">
   <img alt="No build step for the web view" src="https://img.shields.io/badge/web%20view-plain%20ES%20modules-5ad7ff?style=flat-square&labelColor=071423">
+  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-d8f6ff?style=flat-square&labelColor=071423"></a>
   <img alt="Single binary" src="https://img.shields.io/badge/ships%20as-one%20binary-63f5b0?style=flat-square&labelColor=071423">
 </p>
 
@@ -174,3 +175,7 @@ cargo test --release --workspace
 ```
 
 Each component is tested against an independent statement of its spec. NOT, NAND, NOR and the SR latch are also proved from transistors. `crates/course/tests/solutions.rs` builds a reference solution for every Mark at par, up to the CPU and its programs, and checks the timing table against those designs. The Verilog tests need [Icarus Verilog](https://steveicarus.github.io/iverilog/) (`brew install icarus-verilog`) and skip themselves without it.
+
+## License
+
+[MIT](LICENSE) © 2026 Sbonelo Mntungwa

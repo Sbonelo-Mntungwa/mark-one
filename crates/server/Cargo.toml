@@ -2,6 +2,7 @@
 name = "mark-one-server"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
 description = "HTTP server for Mark One: serves the web view and exposes the engine and course as a JSON API."
 
 [[bin]]

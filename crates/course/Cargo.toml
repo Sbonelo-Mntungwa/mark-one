@@ -2,6 +2,7 @@
 name = "mark-one-course"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
 description = "The Mark One learning path: 42 Marks from a live wire to software, built on the engine."
 
 [lib]

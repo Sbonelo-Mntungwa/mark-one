@@ -2,6 +2,7 @@
 name = "mark-one-engine"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
 description = "Mixed-level digital circuit simulator and component library: switch-level MOSFETs up to an 8-bit CPU."
 
 [lib]
